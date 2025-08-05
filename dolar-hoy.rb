@@ -22,5 +22,5 @@ def fetch_usd_cop_from_te
   end
 end
 
-varOcg = fetch_usd_cop_from_te # use varOcg as requested
+fetch_usd_cop_from_te
 
