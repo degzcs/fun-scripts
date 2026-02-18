@@ -19,7 +19,6 @@ def fetch_usd_cop_from_te
   rate_text = doc.at_css('td:contains("USDCOP") + td')&.text ||
               doc.at_css('.table-responsive td:contains("USDCOP") + td')&.text
 
-  puts rate_text
   if rate_text && rate_text.match(/[\d,]+(\.\d+)?/)
     # Remove commas and convert to float
     rate = rate_text.strip.delete(',').to_f
