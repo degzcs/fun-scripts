@@ -12,7 +12,7 @@
 hostport=$(ngrok api endpoints list | jq -r '.endpoints[0].hostport')
 host=$(echo "$hostport" | cut -d: -f1)
 port=$(echo "$hostport" | cut -d: -f2)
-diego="diego"
+user="diego"
 
 remote_path="~/Documents/Obsidian Vault/FolderX"
 local_path="$HOME/Documents/Obsidian Vault/FolderX"
